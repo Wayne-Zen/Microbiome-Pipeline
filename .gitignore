@@ -119,3 +119,9 @@ doc/build
 *.rej
 *~
 
+# My ignore
+!config/galaxy.ini
+!config/tool_conf.xml
+tool-data/toolshed.g2.bx.psu.edu/
+my-data/projects/*
+!my-data/projects/demo

@@ -1,0 +1,17 @@
+<tool id="tabulate_blast_result" name="tabulate blast result">
+  <description>for individual sample</description>
+  <command interpreter="python">
+  	tabulate_blast_result.py 
+  	$tax
+  	$input
+  	$output
+  </command>
+  <inputs>
+  	<param name="tax" type="data" format="tabular" label="Database taxonomy file"/>
+  	<param name="input" type="data" format="tabular" label="BLAST result file"/>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output"/>
+  </outputs>
+
+</tool>

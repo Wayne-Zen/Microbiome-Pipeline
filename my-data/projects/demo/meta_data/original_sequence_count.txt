@@ -1,0 +1,3 @@
+#SampleID	Original
+Sample1	100
+Sample2	100

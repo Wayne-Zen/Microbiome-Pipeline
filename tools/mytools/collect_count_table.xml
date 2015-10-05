@@ -1,0 +1,21 @@
+<tool id="collect_count_table" name="collect count table">
+  <description></description>
+  <command interpreter="python">
+  	collect_count_table.py 
+  	$meta_table
+  	$output
+  	#for input in $inputs
+    $input.input
+    #end for
+  </command>
+  <inputs>
+  	<param name="meta_table" type="data" format="tabular" label="Meta_data table"/>
+  	<repeat name="inputs" title="Count table">
+      <param format="tabular" name="input" type="data" label="Sequence number table"/>
+    </repeat>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output" label="Result2: sequence count table"/>
+  </outputs>
+
+</tool>

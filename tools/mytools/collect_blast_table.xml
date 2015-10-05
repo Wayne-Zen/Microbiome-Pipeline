@@ -1,0 +1,19 @@
+<tool id="collect_blast_table" name="collect blast table">
+  <description></description>
+  <command interpreter="python">
+  	collect_blast_table.py 
+  	$meta_table
+  	$output
+  	#for $file in $inputs
+  	$file
+  	#end for
+  </command>
+  <inputs>
+  	<param name="meta_table" type="data" format="tabular" label="Meta_data table"/>
+  	<param name="inputs" type="data" format="tabular" multiple="True" label="Blast table list"/>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output" label="Result1: OTU table"/>
+  </outputs>
+
+</tool>

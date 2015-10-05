@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<toolbox>
+  <section id="getext" name="Get Data">
+    <tool file="data_source/upload.xml" />
+  </section>
+  
+  <section id="mytools" name="MyTools">
+  	<tool file="mytools/count_fastq_sequence.xml" />
+  	<tool file="mytools/tabulate_blast_result.xml" />
+  	<tool file="mytools/collect_count_table.xml" />
+  	<tool file="mytools/collect_blast_table.xml" />
+  </section>
+</toolbox>

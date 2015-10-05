@@ -1,0 +1,39 @@
+python preprocess_for_galaxy.py <project_name>
+
+* need "pandas" installed
+* prepare folder structure and fill "xxx/meta_data", "xxx/sequence_data_original"
+* can use this script for local preprocessing
+
+Directory structure:
+
+before:
+
+projects/
+└── demo
+    ├── meta_data
+    │   └── meta_data.txt
+    ├── sequence_data_galaxy
+    └── sequence_data_original
+        ├── V1-V3-Sharma01_TAAGGCG-TAGATCG_L001_R1_001.fastq
+        ├── V1-V3-Sharma01_TAAGGCG-TAGATCG_L001_R2_001.fastq
+        ├── V1-V3-Sharma02_TAAGGCG-CTCTCTA_L001_R1_001.fastq
+        └── V1-V3-Sharma02_TAAGGCG-CTCTCTA_L001_R2_001.fastq
+
+after:
+  
+projects/
+└── demo
+    ├── meta_data
+    │   ├── meta_data.txt
+    │   └── sequence_count.txt
+    ├── sequence_data_galaxy
+    │   ├── Sample1_1.fq
+    │   ├── Sample1_2.fq
+    │   ├── Sample2_1.fq
+    │   └── Sample2_2.fq
+    └── sequence_data_original
+        ├── V1-V3-Sharma01_TAAGGCG-TAGATCG_L001_R1_001.fastq
+        ├── V1-V3-Sharma01_TAAGGCG-TAGATCG_L001_R2_001.fastq
+        ├── V1-V3-Sharma02_TAAGGCG-CTCTCTA_L001_R1_001.fastq
+        └── V1-V3-Sharma02_TAAGGCG-CTCTCTA_L001_R2_001.fastq
+

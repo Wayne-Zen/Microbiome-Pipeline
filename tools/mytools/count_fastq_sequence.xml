@@ -1,0 +1,19 @@
+<tool id="count_fastq_sequence" name="fq_counter">
+  <description>for counting fastq list sequence number</description>
+  <command interpreter="python">
+  	count_fastq_sequence.py 
+  	$output
+  	$col_name
+  	#for $file in $inputs
+  	$file
+  	#end for
+  </command>
+  <inputs>
+    <param name="inputs" type="data" format="fastq" multiple="True" label="Fastq file list"/>
+    <param name="col_name" type="text" value="count" label="Column name"/>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output" label="${col_name}_sequence_count.txt"/>
+  </outputs>
+
+</tool>

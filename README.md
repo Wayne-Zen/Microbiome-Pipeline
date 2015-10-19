@@ -14,20 +14,20 @@ sudo ./run.sh
 wzheng4@buffalo.edu
 
 * data library
-Admin -> Data libraries -> Add datasets -> Upload files from filesystem paths
-Link to files without copying into Galaxy
-my-data/projects/demo/sequence_data_galaxy/ [fastq]
-my-data/projects/demo/meta_data/  [tabular]
-my-data/database/HOMD
+  1. Admin -> Data libraries -> Add datasets -> Upload files from filesystem paths
+  2. Link to files without copying into Galaxy
+    * my-data/projects/demo/sequence_data_galaxy/ [fastq]
+    * my-data/projects/demo/meta_data/  [tabular]
+    * my-data/database/HOMD
 
 * install shed tools:
-Admin -> Search Tool Shed
-pear: PEAR evaluates all possible paired-end read overlaps; [Pair-end Joining]
-fastqc: Read QC reports using FastQC; [Quality Control]
-fastq_groomer: Convert between various FASTQ quality formats; [Convert Formats]
-fastq_quality_filter: Filter by quality; [Quality Control]
-fastq_to_fasta: FASTQ to FASTA converter; [Convert Formats]
-ncbi_blast_plus: NCBI BLAST+; [BLAST Search]
+  1. Admin -> Search Tool Shed
+    * pear: PEAR evaluates all possible paired-end read overlaps; [Pair-end Joining]
+    * fastqc: Read QC reports using FastQC; [Quality Control]
+    * fastq_groomer: Convert between various FASTQ quality formats; [Convert Formats]
+    * fastq_quality_filter: Filter by quality; [Quality Control]
+    * fastq_to_fasta: FASTQ to FASTA converter; [Convert Formats]
+    * ncbi_blast_plus: NCBI BLAST+; [BLAST Search]
 
 ## Demo
 1. import sequence data
